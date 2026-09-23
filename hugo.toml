@@ -1,0 +1,60 @@
+baseURL = "/"
+title = "安全保障貿易管理ナビ"
+defaultContentLanguage = "ja"
+defaultContentLanguageInSubdir = false
+hasCJKLanguage = true
+enableRobotsTXT = true
+enableGitInfo = false
+disableKinds = ["taxonomy"]
+
+[languages.ja]
+languageName = "日本語"
+contentDir = "content/ja"
+weight = 1
+[languages.ja.params]
+description = "外為法・政省令・通達に基づく安全保障貿易管理を、図解・表・カードで最短理解するための実務・学習サイト"
+
+[module]
+[module.hugoVersion]
+extended = true
+min = "0.110.0"
+[[module.imports]]
+path = "github.com/google/docsy"
+disable = false
+
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+style = "tango"
+noClasses = false
+
+[outputs]
+section = ["HTML"]
+
+[params]
+copyright = "安全保障貿易管理ナビ（非公式・学習用）"
+offlineSearch = true
+offlineSearchSummaryLength = 80
+offlineSearchMaxResults = 20
+[params.ui]
+sidebar_menu_compact = true
+sidebar_menu_foldable = true
+sidebar_cache_limit = 100
+breadcrumb_disable = false
+navbar_logo = false
+navbar_translucent_over_cover_disable = false
+ul_show = 1
+showLightDarkModeMenu = true
+[params.ui.feedback]
+enable = false
+[params.ui.readingtime]
+enable = false
+[params.mermaid]
+version = "11.17.2"
+theme = "default"
+deterministicIds = true
+[params.mermaid.flowchart]
+diagramPadding = 6
+nodeSpacing = 25
+rankSpacing = 35
+wrappingWidth = 260

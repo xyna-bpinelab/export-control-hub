@@ -1,0 +1,15 @@
+{
+  "name": "export-control-hub",
+  "version": "0.1.0",
+  "private": true,
+  "description": "安全保障貿易管理ナビ (Hugo + Docsy)",
+  "scripts": {
+    "serve": "hugo server",
+    "build": "hugo --gc --minify --cleanDestinationDir"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0"
+  }
+}

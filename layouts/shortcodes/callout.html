@@ -1,0 +1,25 @@
+{{- /*
+  強調ボックス: {{% callout type="warning" title="任意" %}} 本文 {{% /callout %}}
+  type: info | note | tip | warning | danger | case（失敗事例） | exception（法律上の例外）
+*/ -}}
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{- $type := .Get "type" | default "info" -}}
+{{- $conf := dict
+  "info"      (dict "color" "info"      "icon" "fa-circle-info"           "label" "ポイント")
+  "note"      (dict "color" "primary"   "icon" "fa-bookmark"              "label" "補足")
+  "tip"       (dict "color" "success"   "icon" "fa-lightbulb"             "label" "実務のコツ")
+  "warning"   (dict "color" "warning"   "icon" "fa-triangle-exclamation"  "label" "申請時の注意")
+  "danger"    (dict "color" "danger"    "icon" "fa-ban"                   "label" "違反リスク")
+  "case"      (dict "color" "danger"    "icon" "fa-person-falling-burst"  "label" "失敗事例")
+  "exception" (dict "color" "secondary" "icon" "fa-scale-balanced"        "label" "法律上の例外")
+-}}
+{{- $c := index $conf $type | default (index $conf "info") -}}
+{{- $title := .Get "title" | default $c.label -}}
+<div class="alert alert-{{ $c.color }} callout callout-{{ $type }}" role="alert">
+<div class="callout-title"><i class="fa-solid {{ $c.icon }}"></i> {{ $title | safeHTML }}</div>
+{{- if eq .Page.File.Ext "md" }}
+{{ .Inner | markdownify | replaceRE `\n\s*\n` "\n" | safeHTML }}
+{{- else }}
+{{ .Inner | htmlUnescape | safeHTML }}
+{{- end }}
+</div>
