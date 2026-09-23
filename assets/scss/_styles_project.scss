@@ -46,3 +46,10 @@
 .td-content > ul.nav-tabs, .td-content > p, .td-content > ul, .td-content > blockquote {
   max-width: 100% !important;
 }
+
+// ---- Export matrix symbols ----
+.mx { display: inline-block; min-width: 1.6em; padding: 0 .3em; border-radius: .3em; font-weight: 700; text-align: center; }
+.mx-ok   { color: #1b6e3a; background: #d9f2e1; }
+.mx-lic  { color: #1f4e79; background: #dbe8f6; }
+.mx-hard { color: #8a5a00; background: #fbeccb; }
+.mx-ng   { color: #a61b1b; background: #f8d7d7; }

@@ -116,7 +116,16 @@ flowchart LR
 - [ロシア等への輸出](https://www.meti.go.jp/policy/external_economy/trade_control/02_export/17_russia/russia.html)
 - [ロシア等への輸出入に関するFAQ](https://www.meti.go.jp/policy/external_economy/trade_control/02_export/17_russia/qa.html)
 - [対ロシア等制裁関連](https://www.meti.go.jp/policy/external_economy/trade_control/01_seido/04_seisai/crimea.html)
+- [対北朝鮮制裁関連](https://www.meti.go.jp/policy/external_economy/trade_control/01_seido/04_seisai/kitachosen.html)（全ての貨物の輸出禁止。現在の措置は2027年4月13日まで）
+- [イランに対する国連安保理決議を受けた外為法に基づく措置（2025年9月29日）](https://www.meti.go.jp/press/2025/09/20250929004/20250929004.html)
 {{% /callout %}}
+
+## 武器（1項）の移転方針
+
+| 資料 | 内容 |
+|---|---|
+| [防衛装備移転三原則等について（内閣官房）](https://www.cas.go.jp/jp/gaiyou/jimu/pdf/r60405_bouei1.pdf) | 三原則と運用指針の概要。移転を禁止する場合（条約・安保理決議の義務違反、紛争当事国への移転） |
+| [防衛装備移転三原則・運用指針の見直し（防衛省、2026年4月）](https://www.mod.go.jp/atla/soubiseisaku/soubiseisakugijutu/boei_sobi_iten_sangensoku_unyo_shishin_kaisei_202604.pdf) | 完成品の移転を原則可に。殺傷・破壊能力のある「武器」は協定締結国に限定 |
 
 ## 国際輸出管理レジーム・関係団体
 

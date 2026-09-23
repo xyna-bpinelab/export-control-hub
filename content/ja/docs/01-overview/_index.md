@@ -2,8 +2,63 @@
 title: 全体像：輸出管理の流れと法体系
 linkTitle: 01 全体像
 weight: 10
-description: 全体フロー・法体系・国グループを1ページで把握
+description: 輸出できる？の早見マトリクス、全体フロー、法体系、国グループを1ページで把握
 ---
+
+## 0. 輸出できる？早見マトリクス
+
+「許可を取れば、どこへでも何でも輸出できるのか」への答えは **いいえ** です。品目と仕向地の組合せで、次の4パターンに分かれます。
+
+| 記号 | 意味 |
+|:-:|---|
+| <span class="mx mx-ok">◎</span> | **許可不要**（ただし該非判定・取引審査・記録は必要） |
+| <span class="mx mx-lic">○</span> | **許可が必要**。申請すれば許可され得る（包括許可を使える場合もある） |
+| <span class="mx mx-hard">△</span> | 許可が必要で、**審査が厳しく、限定的**。不許可もあり得る |
+| <span class="mx mx-ng">×</span> | **輸出できない**。禁止措置・国連決議などにより、申請しても認められない |
+
+| 品目 ＼ 仕向地 | グループA<br/>（米・英・独・韓 等） | 一般国<br/>（中国・インド・タイ 等） | 国連武器禁輸国<br/>（北朝鮮以外） | イラン | 北朝鮮 | ロシア・<br/>ベラルーシ |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|
+| **武器**（1項） | <span class="mx mx-hard">△</span> ※1 | <span class="mx mx-hard">△</span> ※1 | <span class="mx mx-ng">×</span> ※2 | <span class="mx mx-ng">×</span> ※2 | <span class="mx mx-ng">×</span> | <span class="mx mx-ng">×</span> |
+| **リスト規制品**（2〜15項） | <span class="mx mx-lic">○</span> | <span class="mx mx-lic">○</span> | <span class="mx mx-hard">△</span> | <span class="mx mx-hard">△</span>〜<span class="mx mx-ng">×</span> ※3 | <span class="mx mx-ng">×</span> | <span class="mx mx-ng">×</span> ※4 |
+| **リスト外の汎用品**（16項） | <span class="mx mx-ok">◎</span><br/>（インフォーム時は<span class="mx mx-lic">○</span>） | <span class="mx mx-ok">◎</span><br/>（要件に当たれば<span class="mx mx-lic">○</span>） ※5 | <span class="mx mx-ok">◎</span><br/>（要件に当たれば<span class="mx mx-lic">○</span>） | <span class="mx mx-ok">◎</span><br/>（要件に当たれば<span class="mx mx-lic">○</span>） | <span class="mx mx-ng">×</span> | <span class="mx mx-ok">◎</span>〜<span class="mx mx-ng">×</span> ※4 |
+| **食料品・木材など**（16項の対象外） | <span class="mx mx-ok">◎</span> | <span class="mx mx-ok">◎</span> | <span class="mx mx-ok">◎</span> | <span class="mx mx-ok">◎</span> | <span class="mx mx-ng">×</span> | <span class="mx mx-ok">◎</span>〜<span class="mx mx-ng">×</span> ※4 |
+
+<small>
+
+- ※1 防衛装備移転三原則（2026年4月見直し）により、殺傷・破壊能力のある「武器」は**防衛装備品・技術移転協定の締結国**（17か国）に限り、個別に厳格審査。現に戦闘が行われている国へは原則不可。殺傷・破壊能力のない「非武器」は移転先の制約なし。
+- ※2 三原則で「移転を禁止する場合」（条約・国連安保理決議の義務違反、紛争当事国への移転）に当たる。
+- ※3 イランは懸念国（輸出令別表第4）。核・ミサイル関連（2項・4項など）は国連安保理決議で供給が禁止されており、許可は見込めない。
+- ※4 ロシア・ベラルーシは**輸出禁止措置**（輸出令第2条の承認制）。リスト規制品のすべてに加え、半導体・工作機械・通信機器などの多くの汎用品、ぜいたく品が対象。さらに**指定された団体**向けは全ての貨物が禁止（第三国の指定団体も一部対象）。
+- ※5 一般国向けの通常兵器キャッチオールは16項(1)特定品目のみ。
+
+</small>
+
+### 判断の順番
+
+```mermaid
+flowchart TD
+  A(["輸出したい"]) --> S("❓ 仕向地・相手が<br/>禁止措置の対象？<br/>（北朝鮮、ロシア・ベラルーシ、指定団体 等）")
+  S -- はい --> X["× 輸出できない"]
+  S -- いいえ --> W("❓ 武器（1項）？")
+  W -- はい --> WW["△ 防衛装備移転三原則で判断<br/>（禁止に当たれば ×）"]
+  W -- いいえ --> L("❓ リスト規制品<br/>（2〜15項）？")
+  L -- はい --> LP["○〜△ 許可申請<br/>（特例・包括許可あり）"]
+  L -- いいえ --> C("❓ キャッチオールの要件<br/>（用途・需要者・インフォーム）？")
+  C -- はい --> CP["○ 許可申請"]
+  C -- いいえ --> OK["◎ 許可不要"]
+  classDef q fill:#fff4d6,stroke:#c9a227,color:#333;
+  class S,W,L,C q;
+```
+
+{{% callout type="warning" title="「許可が必要」＝「許可される」ではない" %}}
+- 大量破壊兵器等の開発等に使われる**おそれが明らか**な取引は、どの仕向地でも申請して許可されることはありません。
+- 輸出禁止措置の対象（×）は、許可制ではなく**承認制**で、原則として承認されません（人道目的などの例外は個別に規定）。
+- 禁止措置の範囲は頻繁に変わります。最新の範囲は経済産業省の「[ロシア等への輸出](https://www.meti.go.jp/policy/external_economy/trade_control/02_export/17_russia/russia.html)」「[対北朝鮮制裁関連](https://www.meti.go.jp/policy/external_economy/trade_control/01_seido/04_seisai/kitachosen.html)」で確認してください。
+{{% /callout %}}
+
+{{% callout type="note" title="このほかの承認品目" %}}
+ダイヤモンド、ワシントン条約の動植物、核燃料物質、特定の有害廃棄物・化学物質、文化財なども、仕向地を問わず輸出に**承認**が必要です（輸出令別表第2）。本サイトの対象外です。
+{{% /callout %}}
 
 ## 1. 全体フロー
 

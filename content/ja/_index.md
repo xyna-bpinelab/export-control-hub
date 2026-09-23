@@ -6,6 +6,7 @@ description: 外為法・政省令・通達を「図・表・カード」で最�
 {{< blocks/cover title="安全保障貿易管理ナビ" image_anchor="top" height="min" color="primary" >}}
 <p class="lead mt-3">外為法・政省令・通達を「図・表・カード」でつかむ</p>
 <a class="btn btn-lg btn-light me-3 mb-3" href="docs/01-overview/">全体像から読む <i class="fa-solid fa-arrow-right ms-2"></i></a>
+<a class="btn btn-lg btn-outline-light me-3 mb-3" href="docs/01-overview/#0-輸出できる早見マトリクス">輸出できる？早見表</a>
 <a class="btn btn-lg btn-outline-light mb-3" href="docs/02-list-control/">リスト規制 1〜15項</a>
 {{< /blocks/cover >}}
 
