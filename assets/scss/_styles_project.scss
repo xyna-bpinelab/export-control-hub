@@ -53,3 +53,10 @@
 .mx-lic  { color: #1f4e79; background: #dbe8f6; }
 .mx-hard { color: #8a5a00; background: #fbeccb; }
 .mx-ng   { color: #a61b1b; background: #f8d7d7; }
+
+.td-content .mx-table table {
+  display: table; width: 100%; font-size: .85rem;
+  th, td { padding: .35rem .3rem; white-space: normal; }
+  th small { font-weight: 400; color: $secondary; }
+}
+.td-content .mx-table tbody tr:first-child td { background: rgba($primary, .04); color: $secondary; line-height: 1.35; }
