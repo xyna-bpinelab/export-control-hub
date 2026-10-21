@@ -93,6 +93,13 @@ flowchart LR
 {{% /card %}}
 {{< /cardpane >}}
 
+{{< cardpane >}}
+{{% card header="🇺🇸 米国EAR" %}}
+再輸出規制・デミニミス・許可例外・Entity List。
+[→ 10 米国EAR](docs/10-us-ear/)
+{{% /card %}}
+{{< /cardpane >}}
+
 </div>
 {{% /blocks/section %}}
 

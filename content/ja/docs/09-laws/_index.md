@@ -139,3 +139,14 @@ flowchart LR
 | [オーストラリア・グループ（AG）](https://www.australiagroup.net/) | 化学・生物兵器 | 3・3の2項 |
 | [ミサイル技術管理レジーム（MTCR）](https://www.mtcr.info/) | ミサイル | 4項 |
 | [CISTEC（一般財団法人 安全保障貿易情報センター）](https://www.cistec.or.jp/) | 該非判定ツール（項目別対比表・パラメータシート）、研修 | ― |
+
+## 米国の輸出管理（EAR）
+
+米国原産品・米国技術を含む取引では、外為法とは別に米国の輸出管理規則（EAR）の確認が必要です（→ [10 米国EAR](../10-us-ear/)）。
+
+| 資料 | 内容 |
+|---|---|
+| [Export Administration Regulations（15 CFR Parts 730–774、eCFR）](https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C) | EAR 本文。Part 734（対象・デミニミス・直接製品ルール）、Part 736（一般禁止事項）、Part 738（Country Chart）、Part 740（許可例外）、Part 744（Entity List 等）、Part 774（CCL） |
+| [Bureau of Industry and Security（BIS）](https://www.bis.gov/) | 米国商務省産業安全保障局。規則改正・FAQ・ガイダンス |
+| [Consolidated Screening List](https://www.trade.gov/consolidated-screening-list) | Entity List・MEU List・UVL・Denied Persons・SDN 等の一括検索 |
+| [Federal Register（BIS）](https://www.federalregister.gov/agencies/industry-and-security-bureau) | 規則の改正・Entity List への追加の官報 |
