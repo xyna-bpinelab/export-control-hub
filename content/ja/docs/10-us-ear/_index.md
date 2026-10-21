@@ -186,6 +186,7 @@ EARは**米国外の企業・個人**にも適用されます。日本企業が�
 | [デミニミス・直接製品ルール](de-minimis-fdp/) | 日本製品がEARの対象になる2つの経路（米国部品の組込み・米国技術の直接製品） |
 | [許可例外（License Exception）](license-exceptions/) | LVS・GBS・TMP・RPL・TSU・BAG・ENC・STA など、Part 740 の一覧と使えない場合 |
 | [エンドユーザー・エンドユース規制](end-user-controls/) | Entity List・MEU List・Unverified List・Denied Persons、50%ルール、懸念用途、米国人の活動規制 |
+| [株主確認の手順](ownership-check/) | 50%ルール対応のための取引先の株主（最終的な所有者）の確認手順、株主構成を調べられる情報源 |
 
 ## 公式情報
 
